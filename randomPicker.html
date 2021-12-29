@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Picker</title>
+    <script src="./randomPicker_.js"></script>
+</head>
+<body>
+    <center>
+    <p><h1>Random Picker</h1></p>
+    <input type="text" id="input" placeholder="Input Name">
+    <input type="button" value="Add to List" onclick="fnRenderList()">
+    <p><div id="generator"></div>
+    <h2 id="result">Wait..</h2>
+    </p><br><br><br>
+    <input type="button" value="Start Random" onclick="start()">
+    <input type="button" value="Stop Random" onclick="fnStop()">
+    <table>
+        <thead>
+          <th>No</th>
+          <th>Name</th>
+        <tbody id="output"></tbody>
+     </table>
+    </center>
+</body>
+</html>

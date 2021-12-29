@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <!-- <script src="./session3.js"></script> -->
+  </head>
+  <body>
+    <script>
+        let arr = []
+        let input = +prompt("Input a number!:") // Nan not a number
+        arr.push(input)
+        let min = input
+        let max = input
+
+        while (true) {
+          let input2 = +prompt("input a number:")
+
+        if (isNaN(input2)) {
+          break
+        } else {
+          arr.push(input2)
+          if (input2 < min) min = input2
+          if (input2 > max) max = input2
+
+        }
+      }
+
+      alert(`${arr}
+      ${min} is the smallest
+      ${max} is the biggest`)
+
+
+      //     let input = prompt("Input numbers!")
+      //     let result = [input[0]]
+
+      //     for (let i = 0; i < input.length -1 ; i++) {
+      //     if (+input[i] % 2 !== 0 && +input[i + 1] % 2 !== 0) {
+      //         result.push("-", input[i + 1])
+      //     }  else {
+      //         result.push(input[i + 1])
+      //     }
+      // }
+
+      // alert(result.join(""))
+    </script>
+  </body>
+</html>
